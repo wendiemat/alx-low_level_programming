@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
 * _isalpha - shows l if the input is a
 letter. Another case, show 0
@@ -11,13 +10,13 @@ int _isalpha(int c)
 {
 if ((c >= 97 && c <= 122) || (c >= 65 && c <= 90))
 { 
-return (1);
+	return (1);
 }
 else
 {
-return (0);
+	return (0);
 }
-_putchar('\n');
+	_putchar('\n');
 }
 
 

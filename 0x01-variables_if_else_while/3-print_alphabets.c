@@ -1,5 +1,4 @@
-#include <stdlib.h>
-#include <time.h>
+#include <stdio.h>
 /**
 * main - print the last digit
 * 
@@ -7,18 +6,12 @@
 */
 int main(void)
 {
-	char c;
-	char d;
-	c = 'a';
-	d = 'A';
-while (c <= 'z') {
-putchar(c);
-c++;
-	}
-while (d <= 'Z') {
-	putchar(d);
-	d++;
-	}
+char alp[52] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+int i;
+for (i = 0; i < 52; i++)
+{
+	putchar(alp[i]);
+}
 putchar('\n');
 return (0);
 }
